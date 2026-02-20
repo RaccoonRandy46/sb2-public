@@ -1,0 +1,284 @@
+package com.coop.skyblock2.listeners.dungeons.solvers.icefill;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class IceFillSolutions {
+
+	public static HashMap<String, ArrayList<int[]>> solutions = new HashMap<>();
+	
+	static {
+		
+		//small
+		ArrayList<int[]> solutionS0 = new ArrayList<>();
+		solutionS0.add(new int[] {0, 0});
+		solutionS0.add(new int[] {-1, 0});
+		solutionS0.add(new int[] {-1, 1});
+		solutionS0.add(new int[] {1, 1});
+		solutionS0.add(new int[] {1, 2});
+		solutionS0.add(new int[] {0, 2});
+		solutions.put("001000100", solutionS0);
+		
+		ArrayList<int[]> solutionS1 = new ArrayList<>();
+		solutionS1.add(new int[] {0, 0});
+		solutionS1.add(new int[] {0, 1});
+		solutionS1.add(new int[] {-1, 1});
+		solutionS1.add(new int[] {-1, 2});
+		solutionS1.add(new int[] {0, 2});
+		solutions.put("101001001", solutionS1);
+		
+		ArrayList<int[]> solutionS2 = new ArrayList<>();
+		solutionS2.add(new int[] {0, 0});
+		solutionS2.add(new int[] {1, 0});
+		solutionS2.add(new int[] {1, 1});
+		solutionS2.add(new int[] {-1, 1});
+		solutionS2.add(new int[] {-1, 2});
+		solutionS2.add(new int[] {0, 2});
+		solutions.put("100000001", solutionS2);
+		
+		//medium
+		ArrayList<int[]> solutionM0 = new ArrayList<>();
+		solutionM0.add(new int[] {0, 0});
+		solutionM0.add(new int[] {-2, 0});
+		solutionM0.add(new int[] {-2, 1});
+		solutionM0.add(new int[] {-1, 1});
+		solutionM0.add(new int[] {-1, 2});
+		solutionM0.add(new int[] {-2, 2});
+		solutionM0.add(new int[] {-2, 4});
+		solutionM0.add(new int[] {-1, 4});
+		solutionM0.add(new int[] {-1, 3});
+		solutionM0.add(new int[] {0, 3});
+		solutionM0.add(new int[] {0, 2});
+		solutionM0.add(new int[] {1, 2});
+		solutionM0.add(new int[] {1, 0});
+		solutionM0.add(new int[] {2, 0});
+		solutionM0.add(new int[] {2, 4});
+		solutionM0.add(new int[] {0, 4});
+		solutions.put("0000000100000000001000000", solutionM0);
+		
+		ArrayList<int[]> solutionM1 = new ArrayList<>();
+		solutionM1.add(new int[] {0, 0});
+		solutionM1.add(new int[] {-1, 0});
+		solutionM1.add(new int[] {-1, 1});
+		solutionM1.add(new int[] {-2, 1});
+		solutionM1.add(new int[] {-2, 2});
+		solutionM1.add(new int[] {-1, 2});
+		solutionM1.add(new int[] {-1, 3});
+		solutionM1.add(new int[] {0, 3});
+		solutionM1.add(new int[] {0, 2});
+		solutionM1.add(new int[] {1, 2});
+		solutionM1.add(new int[] {1, 0});
+		solutionM1.add(new int[] {2, 0});
+		solutionM1.add(new int[] {2, 4});
+		solutionM1.add(new int[] {0, 4});
+		solutions.put("1000000100000001001011000", solutionM1);
+		
+		ArrayList<int[]> solutionM2 = new ArrayList<>();
+		solutionM2.add(new int[] {0, 0});
+		solutionM2.add(new int[] {-2, 0});
+		solutionM2.add(new int[] {-2, 4});
+		solutionM2.add(new int[] {-1, 4});
+		solutionM2.add(new int[] {-1, 2});
+		solutionM2.add(new int[] {1, 2});
+		solutionM2.add(new int[] {1, 0});
+		solutionM2.add(new int[] {2, 0});
+		solutionM2.add(new int[] {2, 4});
+		solutionM2.add(new int[] {0, 4});
+		solutions.put("0000001100000000011000000", solutionM2);
+		
+		ArrayList<int[]> solutionM3 = new ArrayList<>();
+		solutionM3.add(new int[] {0, 0});
+		solutionM3.add(new int[] {-2, 0});
+		solutionM3.add(new int[] {-2, 3});
+		solutionM3.add(new int[] {-1, 3});
+		solutionM3.add(new int[] {-1, 2});
+		solutionM3.add(new int[] {0, 2});
+		solutionM3.add(new int[] {0, 1});
+		solutionM3.add(new int[] {1, 1});
+		solutionM3.add(new int[] {1, 0});
+		solutionM3.add(new int[] {2, 0});
+		solutionM3.add(new int[] {2, 4});
+		solutionM3.add(new int[] {1, 4});
+		solutionM3.add(new int[] {1, 3});
+		solutionM3.add(new int[] {0, 3});
+		solutionM3.add(new int[] {0, 4});
+		solutions.put("0000001000000100000011000", solutionM3);
+		
+		ArrayList<int[]> solutionM4 = new ArrayList<>();
+		solutionM4.add(new int[] {0, 0});
+		solutionM4.add(new int[] {0, 1});
+		solutionM4.add(new int[] {1, 1});
+		solutionM4.add(new int[] {1, 0});
+		solutionM4.add(new int[] {2, 0});
+		solutionM4.add(new int[] {2, 4});
+		solutionM4.add(new int[] {1, 4});
+		solutionM4.add(new int[] {1, 3});
+		solutionM4.add(new int[] {-1, 3});
+		solutionM4.add(new int[] {-1, 0});
+		solutionM4.add(new int[] {-2, 0});
+		solutionM4.add(new int[] {-2, 4});
+		solutionM4.add(new int[] {0, 4});
+		solutions.put("0000000000001100000000000", solutionM4);
+		
+		ArrayList<int[]> solutionM5 = new ArrayList<>();
+		solutionM5.add(new int[] {0, 0});
+		solutionM5.add(new int[] {0, 1});
+		solutionM5.add(new int[] {-1, 1});
+		solutionM5.add(new int[] {-1, 0});
+		solutionM5.add(new int[] {-2, 0});
+		solutionM5.add(new int[] {-2, 4});
+		solutionM5.add(new int[] {-1, 4});
+		solutionM5.add(new int[] {-1, 3});
+		solutionM5.add(new int[] {1, 3});
+		solutionM5.add(new int[] {1, 0});
+		solutionM5.add(new int[] {2, 0});
+		solutionM5.add(new int[] {2, 4});
+		solutionM5.add(new int[] {0, 4});
+		solutions.put("0000000000011000000000000", solutionM5);
+		
+		//large
+		ArrayList<int[]> solutionL0 = new ArrayList<>();
+		solutionL0.add(new int[] {0, 0});
+		solutionL0.add(new int[] {0, 3});
+		solutionL0.add(new int[] {-1, 3});
+		solutionL0.add(new int[] {-1, 0});
+		solutionL0.add(new int[] {-2, 0});
+		solutionL0.add(new int[] {-2, 1});
+		solutionL0.add(new int[] {-3, 1});
+		solutionL0.add(new int[] {-3, 2});
+		solutionL0.add(new int[] {-2, 2});
+		solutionL0.add(new int[] {-2, 3});
+		solutionL0.add(new int[] {-3, 3});
+		solutionL0.add(new int[] {-3, 6});
+		solutionL0.add(new int[] {-2, 6});
+		solutionL0.add(new int[] {-2, 4});
+		solutionL0.add(new int[] {-1, 4});
+		solutionL0.add(new int[] {-1, 5});
+		solutionL0.add(new int[] {2, 5});
+		solutionL0.add(new int[] {2, 3});
+		solutionL0.add(new int[] {1, 3});
+		solutionL0.add(new int[] {1, 0});
+		solutionL0.add(new int[] {3, 0});
+		solutionL0.add(new int[] {3, 1});
+		solutionL0.add(new int[] {2, 1});
+		solutionL0.add(new int[] {2, 2});
+		solutionL0.add(new int[] {3, 2});
+		solutionL0.add(new int[] {3, 6});
+		solutionL0.add(new int[] {0, 6});
+		solutions.put("1000000000000000000000000000000110000000000010000", solutionL0);
+		
+		ArrayList<int[]> solutionL1 = new ArrayList<>();
+		solutionL1.add(new int[] {0, 0});
+		solutionL1.add(new int[] {0, 1});
+		solutionL1.add(new int[] {-1, 1});
+		solutionL1.add(new int[] {-1, 0});
+		solutionL1.add(new int[] {-3, 0});
+		solutionL1.add(new int[] {-3, 1});
+		solutionL1.add(new int[] {-2, 1});
+		solutionL1.add(new int[] {-2, 2});
+		solutionL1.add(new int[] {-3, 2});
+		solutionL1.add(new int[] {-3, 6});
+		solutionL1.add(new int[] {-2, 6});
+		solutionL1.add(new int[] {-2, 4});
+		solutionL1.add(new int[] {-1, 4});
+		solutionL1.add(new int[] {-1, 5});
+		solutionL1.add(new int[] {0, 5});
+		solutionL1.add(new int[] {0, 2});
+		solutionL1.add(new int[] {1, 2});
+		solutionL1.add(new int[] {1, 4});
+		solutionL1.add(new int[] {2, 4});
+		solutionL1.add(new int[] {2, 0});
+		solutionL1.add(new int[] {3, 0});
+		solutionL1.add(new int[] {3, 6});
+		solutionL1.add(new int[] {0, 6});
+		solutions.put("0000100000010000100000110000000000000001100010000", solutionL1);
+		
+		ArrayList<int[]> solutionL2 = new ArrayList<>();
+		solutionL2.add(new int [] {0, 0});
+		solutionL2.add(new int [] {-1, 0});
+		solutionL2.add(new int [] {-1, 2});
+		solutionL2.add(new int [] {-2, 2});
+		solutionL2.add(new int [] {-2, 0});
+		solutionL2.add(new int [] {-3, 0});
+		solutionL2.add(new int [] {-3, 6});
+		solutionL2.add(new int [] {-2, 6});
+		solutionL2.add(new int [] {-2, 4});
+		solutionL2.add(new int [] {-1, 4});
+		solutionL2.add(new int [] {-1, 5});
+		solutionL2.add(new int [] {1, 5});
+		solutionL2.add(new int [] {1, 4});
+		solutionL2.add(new int [] {2, 4});
+		solutionL2.add(new int [] {2, 2});
+		solutionL2.add(new int [] {1, 2});
+		solutionL2.add(new int [] {1, 0});
+		solutionL2.add(new int [] {3, 0});
+		solutionL2.add(new int [] {3, 5});
+		solutionL2.add(new int [] {2, 5});
+		solutionL2.add(new int [] {2, 6});
+		solutionL2.add(new int [] {0, 6});
+		solutions.put("0000000000101000010000111100000100000000000010001", solutionL2);
+		
+		ArrayList<int[]> solutionL3 = new ArrayList<>();
+		solutionL3.add(new int[] {0, 0});
+		solutionL3.add(new int[] {1, 0});
+		solutionL3.add(new int[] {1, 1});
+		solutionL3.add(new int[] {2, 1});
+		solutionL3.add(new int[] {2, 0});
+		solutionL3.add(new int[] {3, 0});
+		solutionL3.add(new int[] {3, 3});
+		solutionL3.add(new int[] {0, 3});
+		solutionL3.add(new int[] {0, 2});
+		solutionL3.add(new int[] {-1, 2});
+		solutionL3.add(new int[] {-1, 0});
+		solutionL3.add(new int[] {-3, 0});
+		solutionL3.add(new int[] {-3, 1});
+		solutionL3.add(new int[] {-2, 1});
+		solutionL3.add(new int[] {-2, 2});
+		solutionL3.add(new int[] {-3, 2});
+		solutionL3.add(new int[] {-3, 6});
+		solutionL3.add(new int[] {-2, 6});
+		solutionL3.add(new int[] {-2, 3});
+		solutionL3.add(new int[] {-1, 3});
+		solutionL3.add(new int[] {-1, 5});
+		solutionL3.add(new int[] {1, 5});
+		solutionL3.add(new int[] {1, 4});
+		solutionL3.add(new int[] {3, 4});
+		solutionL3.add(new int[] {3, 5});
+		solutionL3.add(new int[] {2, 5});
+		solutionL3.add(new int[] {2, 6});
+		solutionL3.add(new int[] {0, 6});
+		solutions.put("0000000000100000001100000000000100000000000010001", solutionL3);
+		
+		ArrayList<int[]> solutionL4 = new ArrayList<>();
+		solutionL4.add(new int[] {0, 0});
+		solutionL4.add(new int[] {1, 0});
+		solutionL4.add(new int[] {1, 1});
+		solutionL4.add(new int[] {-1, 1});
+		solutionL4.add(new int[] {-1, 0});
+		solutionL4.add(new int[] {-3, 0});
+		solutionL4.add(new int[] {-3, 1});
+		solutionL4.add(new int[] {-2, 1});
+		solutionL4.add(new int[] {-2, 2});
+		solutionL4.add(new int[] {-3, 2});
+		solutionL4.add(new int[] {-3, 6});
+		solutionL4.add(new int[] {-2, 6});
+		solutionL4.add(new int[] {-2, 3});
+		solutionL4.add(new int[] {-1, 3});
+		solutionL4.add(new int[] {-1, 4});
+		solutionL4.add(new int[] {0, 4});
+		solutionL4.add(new int[] {0, 3});
+		solutionL4.add(new int[] {2, 3});
+		solutionL4.add(new int[] {2, 0});
+		solutionL4.add(new int[] {3, 0});
+		solutionL4.add(new int[] {3, 6});
+		solutionL4.add(new int[] {2, 6});
+		solutionL4.add(new int[] {2, 4});
+		solutionL4.add(new int[] {1, 4});
+		solutionL4.add(new int[] {1, 5});
+		solutionL4.add(new int[] {0, 5});
+		solutionL4.add(new int[] {0, 6});
+		solutions.put("0000000000000000111000000000000000000100000010100", solutionL4);
+		
+	}
+	
+}
